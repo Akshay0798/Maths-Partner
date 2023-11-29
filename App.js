@@ -115,4 +115,7 @@ problems.addEventListener("click", (e) => {
   }
 });
 
-
+function encodeTrigonometricFunctions(expression) {
+    let b = 180 / expression;
+    return `${Math.PI}/${b}`;
+  }
