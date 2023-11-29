@@ -1,1 +1,60 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Partner</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b6cae8b029.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Math Partner</h1>
+      <button class="saved-btn" id="savedSolutions">Saved solutions</button>
+      <button class="search-btn hide" id="searchBtn">Search new</button>
+    </header>
+    <section class="main">
+      <form class="form">
+        <div class="problem-statement">
+          <label for="expression">Problem</label>
+          <input type="text" id="expression" placeholder="TYPE HERE......" />
+        </div>
+        <div class="category-selector">
+          <label for="problemCategory">Select Category</label>
+          <select name="category" id="problemCategory">
+            <option value="simplify">Simplify</option>
+            <option value="factor">Factor</option>
+            <option value="derive">Derive</option>
+            <option value="integrate">Integrate</option>
+            <option value="zeroes">Find 0's</option>
+            <option value="tangent">Find Tangent</option>
+            <option value="area">Area Under Curve</option>
+            <option value="cos">Cosine</option>
+            <option value="sin">Sine</option>
+            <option value="tan">Tangent</option>
+            <option value="arccos">Inverse Cosine</option>
+            <option value="arcsin">Inverse Sine</option>
+            <option value="arctan">Inverse Tangent</option>
+            <option value="abs">Absolute Value</option>
+            <option value="log">Logarithm</option>
+          </select>
+        </div>
+        <div id="searchIcon">
+          <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+        </div>
+      </form>
+      <div class="solution">
+        <p id="currProblemExpression">Problem:</p>
+        <p id="currProblemSolution">Output:</p>
+      </div>
+    </section>
+    <section class="savedSolutions hide">
+      <div class="problems"></div>
+      <div class="empty">No problem to display</div>
+    </section>
+    <script src="App.js"></script>
+  </body>
+</html>

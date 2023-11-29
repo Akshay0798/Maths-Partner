@@ -1,1 +1,158 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+body {
+  padding: 34px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  text-transform: capitalize;
+  font-size: 3rem;
+  padding-left: 16px;
+}
+.saved-btn,
+.search-btn {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.form {
+  display: flex;
+  gap: 24px;
+  margin-top: 60px;
+}
+.form label {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 12px 34px;
+}
+#expression,
+#problemCategory {
+  padding: 12px 24px;
+  font-size: 24px;
+  border: 1px solid black;
+  border-radius: 18px;
+}
+#problemCategory {
+  color: white;
+  background-color: black;
+}
+#searchIcon {
+  margin-top: 64px;
+  width: 50px;
+  height: 50px;
+  transform: scale(1.3);
+  background-color: grey;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.solution {
+  margin: 12px;
+  background-color: rgb(173, 173, 173);
+  padding: 14px 34px;
+  font-size: 24px;
+  border-radius: 18px;
+  max-width: 575px;
+  height: 200px;
+}
+.problems {
+  margin-top: 66px;
+}
+#problem {
+  margin-bottom: 40px;
+}
+#problemNo {
+  font-size: 26px;
+  font-weight: bold;
+}
+#problemDesc {
+  border-radius: 18px;
+  background-color: rgb(189, 187, 187);
+  font-size: 22px;
+  padding: 14px;
+  position: relative;
+}
+#problemSolution {
+  padding: 34px;
+  font-size: 24px;
+}
+#delete {
+  position: absolute;
+  right: 14px;
+  bottom: 24px;
+  cursor: pointer;
+}
+.empty {
+  background-color: rgb(175, 175, 175);
+  color: black;
+  max-width: 700px;
+  height: 250px;
+  margin: 34px auto;
+  border-radius: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: none;
+}
+@media (max-width: 520px) {
+  body {
+    padding: 34px 16px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .saved-btn,
+  .search-btn {
+    padding: 6px;
+    font-size: 1rem;
+    width: 120px;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .form label {
+    display: inline-block;
+    font-size: 24px;
+    padding: 12px;
+  }
+  #expression,
+  #problemCategory {
+    font-size: 18px;
+    padding: 15px;
+  }
+  #searchIcon {
+    margin-top: 20px;
+    position: relative;
+    left: calc(100vw - 30%);
+    bottom: 100px;
+  }
+  #problemDesc {
+    font-size: 20px;
+  }
+  #problemSolution {
+    padding: 14px;
+    font-size: 24px;
+  }
+}
